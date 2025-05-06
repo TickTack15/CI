@@ -1,0 +1,93 @@
+<template>
+  <!-- Слайд 14: JS structure -->
+  <section class="slide" id="slide-14">
+    <div class="slide-content">
+      <h2>JavaScript und Besonderheiten</h2>
+      
+      <div class="info-box">
+        <ul><h3>Besonderheiten</h3>
+          <li><strong>Läuft in einem Browser.</strong>
+            Man muss nichts installieren: JS ist bereits in Chrome, Firefox, Safari usw. integriert.
+          </li>
+          <li><strong>Funktioniert mit HTML und CSS.</strong>
+            Über JS kann man den Inhalt der Seite verwalten, Stile ändern, auf Klicks reagieren usw.
+          </li>
+          <li><strong>Interpretiert und dynamisch.</strong>
+            Erfordert keine Kompilierung, der Code wird "on the fly" ausgeführt.</li>
+          <li><strong>Asynchronität.</strong>
+            JS kann Aktionen im Hintergrund ausführen (z. B. Daten vom Server herunterladen), ohne die Seite zu verlangsamen.</li>
+        </ul>
+      </div>
+
+      <div class="block">
+        <div class="two-column">
+          <div class="column">
+            <ul>JS ist nicht nur für das Web. Hier sind einige Beispiele:
+              <li>
+                <ul><strong>Webentwicklung:</strong>
+                  <li><strong>Frontend:</strong> React, Vue, Angular zum Erstellen von Schnittstellen.</li>
+                  <li><strong>Backend:</strong> Node.js für Server (z. B. Netflix-Backend).</li>
+                </ul>
+              </li>
+            <li><strong>Mobile Apps:</strong> Frameworks wie React Native ermöglichen uns das Schreiben von Apps für iOS und Android.</li>
+            <li><strong>Desktop-Anwendungen:</strong> Mit Electron (verwendet in VS Code, Discord) können wir Programme in JS erstellen.</li>
+            <li><strong>Spiele:</strong> Bibliotheken wie Phaser für 2D-Spiele im Browser.</li>
+            <li><strong>IoT</strong> und intelligente Geräte: JS steuert intelligente Glühbirnen oder Roboter.</li>
+          </ul>
+          </div>
+          <div class="column">
+            <img src="images/670h400-86.png" alt="">
+          </div>
+        </div>
+        
+
+      <div class="two-column">
+        <div class="column positive">
+          <ul><h4>Vorteile:</h4>
+            <li><strong>Universalität:</strong> Funktioniert überall – vom Browser bis zum Server.</li>
+            <li><strong>Große Community:</strong> jede Menge Bibliotheken, Frameworks und Tutorials.</li>
+            <li><strong>Einfacher Einstieg:</strong> Sie können Code direkt in Ihrem Browser schreiben.</li>
+            <li><strong>Aktive Entwicklung:</strong> Jedes Jahr werden neue Funktionen hinzugefügt (ES6, ES7 usw.).</li>
+          </ul>
+        </div>
+        <div class="column negative">
+          <ul><h4>Nachteile:</h4>
+            <li><strong>Tippfehler:</strong> Dynamisches Tippen kann zu Fehlern führen.</li>
+            <li><strong>Leistung:</strong> JS ist bei komplexen Berechnungen langsamer als C++ oder Java.</li>
+            <li><strong>Browserabhängigkeit:</strong> Verschiedene Browser können Code unterschiedlich interpretieren (obwohl dies seltener geworden ist).</li>
+          </ul>
+        </div>
+      </div>
+      <div style="color: white; background-color: #ca1010;">Schlage vor, die Browserkonsole zu öffnen (F12) und etwas wie alert("Hallo Welt!") zu schreiben.</div>
+      </div>
+
+      <div class="two-column">
+        <div class="column interactive">
+          <h1>Counter: <span id="count">0</span></h1>
+          <button id="incrementBtn">Click!</button>
+          <button id="resetBtn">Reset</button>
+        </div>
+        <div class="column">
+          <div class="code-container">
+  <pre><code class="language-html" data-highlight="true">
+&lt;body&gt;
+  &lt;h1&gt;Counter: &lt;span id="count">0&lt;/span&gt;&lt;/h1&gt;
+  &lt;button id="incrementBtn"&gt;Click!&lt;/button&gt;
+
+  &lt;script&gt;
+    let count = 0;
+
+    function increment() {
+      count++;
+      document.getElementById("count").innerText = count;
+    }
+      document.getElementById("incrementBtn").addEventListener("click", increment);
+  &lt;/script&gt;
+&lt;/body&gt;
+      </code></pre>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

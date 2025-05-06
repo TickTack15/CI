@@ -1,0 +1,38 @@
+<template>
+  <!-- Слайд 11: What do we get in response? -->
+  <section class="slide" id="slide-11">
+    <div class="slide-content">
+      <h2>Aber was genau bekommen wir als Antwort?</h2>
+      <div class="two-column">
+        <div class="column">
+          <div class="block">
+            <h3>3. JS</h3>
+            <pre><code class="language-js" data-highlight="true">
+// Dieser Code ändert den Text auf der Seite,
+// wenn der Benutzer auf die Schaltfläche klickt
+document.getElementById("myButton").onclick = function() {
+  document.getElementById("myText").innerHTML = "Sie haben den Knopf gedrückt!";
+};</code></pre>
+          </div>
+          <div class="info-box">
+            <p>JavaScript ist eine Programmiersprache, die zum Erstellen interaktiver und dynamischer Elemente auf Webseiten verwendet wird. Einfach ausgedrückt ermöglicht JavaScript uns, Seiten Aktionen hinzuzufügen, die als Reaktion auf Benutzeraktionen wie Klicken, Scrollen, Tippen usw. erfolgen.</p>
+            <ul>Mit JavaScript können wir:
+              <li>Implementieren die Interaktivität: Zeigen oder verbergen beispielsweise Elemente beim Anklicken.</li>
+              <li>Arbeiten mit Formularen: Überprüfen die vom Benutzer eingegebenen Daten vor dem Senden.</li>
+              <li>Erstellen animierte Effekte: Bewegen beispielsweise Elemente reibungslos auf dem Bildschirm.</li>
+              <li>Laden neue Daten auf die Seite, ohne sie neu zu laden (mithilfe von Technologien wie AJAX).</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="column">
+          <div class="example">
+            <button id="myButton">Click</button>
+            <p id="myText">Klicken Sie auf den Button</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</template>

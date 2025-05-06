@@ -1,0 +1,66 @@
+<template>
+  <!-- Слайд 17: Parsing -->
+  <section class="slide" id="slide-17">
+    <div class="slide-content">
+      <h2>Was macht der Browser mit dem empfangenen HTML-Dokument?</h2>
+      <h3>Parsing</h3>
+         <div class="info-box">
+          <p>Beim Parsen handelt es sich um den Prozess der Analyse und Umwandlung von Daten von einem Format in ein anderes, oft mit dem Ziel, Informationen zu extrahieren oder die Daten zu strukturieren.</p>
+          <p>Im Kontext der Webentwicklung und von Browsern bezieht sich Parsing im Allgemeinen auf die Analyse eines HTML-Dokuments und die anschließende Erstellung einer Struktur, die die Bearbeitung der Seitendaten ermöglicht.</p>
+         </div>
+         <ol><strong>Verarbeitungsschritte:</strong>
+          <li>HTML-Dokument wird geladen</li>
+          <li>Lexikalische Analyse (Tokenisierung)</li>
+          <li>Erstellen eines Knotenbaums (DOM-Baum)</li>
+          <li>Text- und Attributverarbeitung</li>
+          <li>Erstellen eines Stilbaums (CSS)</li>
+          <li>JavaScript-Ausführung</li>
+          <li>Seitenanzeige</li>
+         </ol>
+
+         <div class="info-block">
+          <h3>Tokenization</h3>
+          <img style="width: 100%;" src="images/tokens-list.png" alt="">
+         </div>
+
+         <div class="two-column">
+          <div class="column">
+            <div class="info-block">
+              <h3>Erstellen eines DOM-Baums</h3>
+              <img style="height: 80vh;" src="images/dom.png" alt="">
+             </div>
+          </div>
+          <div class="column">
+            <div class="info-box">
+              <ul><h4>Die wichtigsten im Dokumentobjektmodell verwendeten Strukturen sind:</h4>
+                <li>Baum</li>
+                <li>Erbe</li>
+                <li>Vorfahr</li>
+                <li>Brüder/Schwestern</li>
+                <li>Veranstaltungen</li>
+                <li>Knoten</li>
+              </ul>
+            </div>
+
+            <div class="block">
+              Der Browser erstellt das DOM beim Laden der Seite, speichert es in der Dokumentvariable und meldet die Erstellung des DOM mithilfe des Ereignisses "DOMContentLoaded". Die Dokumentvariable ist der Ausgangspunkt jeglicher Arbeit mit HTML-Markup in JavaScript.
+            </div>
+
+            <div class="block">
+              Das Dokumentobjekt enthält zahlreiche Eigenschaften und Methoden, die Ihnen die Arbeit mit HTML ermöglichen. Die am häufigsten verwendeten Methoden sind diejenigen, mit denen wir Seitenelemente finden können. 
+              <ul>
+                <li>getElementById — Suche nach einem Element anhand der ID;</li>
+                <li>getElementsByClassName — Suche nach Elementen nach Klassennamen;</li>
+                <li>getElementsByTagName — Suche nach Elementen nach Tag-Namen;</li>
+                <li>querySelector — findet das erste Element, das dem CSS-Selektor entspricht;</li>
+                <li>querySelectorAll – Suche nach allen Elementen, die einem CSS-Selektor entsprechen.</li>
+              </ul>
+
+            </div>
+          </div>
+         </div>
+
+
+    </div>
+  </section>
+</template>

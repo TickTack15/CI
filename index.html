@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/atom-one-dark.min.css">
+
+  <title>HTML, CSS, JavaScript, SVG</title>
+</head>
+<body>
+  <div class="presentation-container">
+    <div id="nav-container"></div>
+    <div id="slides-container" class="slides-container"></div>
+    <div id="progress-container"></div>
+  </div>
+  <script type="module">
+    import hljs from 'https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/+esm';
+    window.hljs = hljs;
+  </script>
+  <script src="scripts/main.js" type="module"></script>
+</body>
+</html>

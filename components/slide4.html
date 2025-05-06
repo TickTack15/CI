@@ -1,0 +1,67 @@
+<template>
+  <!-- Слайд 4: Работа браузера -->
+  <section class="slide" id="slide-4">
+    <div class="slide-content">
+      <h2>So funktioniert ein Webbrowser</h2>
+      <div class="two-column">
+        <div class="column">
+          <div class="slide-extra">
+            <h3>Wie der Benutzer mit dem Browser interagiert?</h3>
+            <img width="80%" src="images/confused.png"/>
+          </div>
+        </div>
+        
+        <!-- Окно поиска гугл -->
+        <div class="column">
+          <div style="border: 2px solid #ccc; border-radius: 10px; width: 500px; font-family: sans-serif; overflow: hidden; box-shadow: 0 0 12px rgba(0,0,0,0.15);">
+            <!-- Браузерная панель -->
+            <div style="background: #f2f2f2; padding: 8px 12px; border-bottom: 1px solid #ccc; display: flex; align-items: center;">
+              <div style="display: flex; gap: 6px; margin-right: 12px;">
+                <span style="background: #ff5f57; width: 12px; height: 12px; border-radius: 50%; display: inline-block;"></span>
+                <span style="background: #ffbd2e; width: 12px; height: 12px; border-radius: 50%; display: inline-block;"></span>
+                <span style="background: #28c840; width: 12px; height: 12px; border-radius: 50%; display: inline-block;"></span>
+              </div>
+              <input
+                type="text"
+                value="Search with Google or enter a URL"
+                style="background: white; flex: 1; padding: 4px 8px; border-radius: 4px; font-size: 14px; color: gray; border: none;"
+                oninput="this.setAttribute('value', this.value)"
+              />
+            </div>
+          
+            <!-- Тело "страницы" -->
+            <div style="padding: 30px; text-align: center;">
+              <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google" width="200" style="margin-bottom: 20px;" />
+              <form onsubmit="return false;" style="position: relative; display: inline-block; width: 100%;">
+                <input
+                  type="text"
+                  id="fakeSearch"
+                  placeholder="Search with Google or enter a URL"
+                  autocomplete="off"
+                  style="width: 100%; max-width: 400px; padding: 12px 16px; font-size: 16px; border: 1px solid #ccc; border-radius: 24px; outline: none; box-sizing: border-box;"
+                />
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <button class="hide-btn" style="display: block;">Was genau passiert?</button>
+      <div id="nav-desc" class="extra-info hidden">
+        <div class="hover-text" data-hover="173.194.79.104">google.com</div>
+        <h3>Das Geschehen kann in zwei Phasen unterteilt werden:</h3>
+        <div class="nav-file-container">
+          <div class="navi">
+            <img src="images/path.svg" width="300px" height="300px"/>
+            <h3>Navigation</h3>
+          </div>
+          <div class="transfer">
+            <img src="images/transfer.svg" height="300px"/>
+            <h3>Daten empfangen</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

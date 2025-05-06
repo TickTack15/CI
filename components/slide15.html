@@ -1,0 +1,168 @@
+<template>
+  <!-- Слайд 15: JavaScript und Python -->
+  <section class="slide" id="slide-15">
+    <div class="slide-content">
+      <h2>JavaScript und Python</h2>
+
+      <div class="info-box green">
+        <ul><h3>Was JavaScript und Python gemeinsam haben?</h3>
+          <li><strong>Hochrangig:</strong> Leicht zu lesen und zu verstehen, verbirgt die komplexen Details der Funktionsweise eines Computers.</li>
+          <li><strong>Dynamisch typisiert:</strong> Der Variablentyp (Zahl, String usw.) muss nicht im Voraus angegeben werden.</li>
+          <li><strong>Vielseitig einsetzbar:</strong> Wird im Web, auf Servern, in der Datenanalyse und in anderen Bereichen verwendet.</li>
+          <li><strong>Haben eine große Community:</strong> Viele Bibliotheken, Frameworks und Tutorials.</li>
+        </ul>
+      </div>
+
+      <div class="two-column">
+        <div class="column">
+          <div class="code-container">
+  <pre><code class="language-js" data-highlight="true">// JavaScript
+let name = "Patrick";
+console.log(`Hi, ${name}!`); // Hi, Patrick!</code></pre>
+          </div>
+        </div>
+        <div class="column">
+          <div class="code-container">
+  <pre><code class="language-py" data-highlight="true"># Python
+name = "Patrick"
+print(f"Hi, {name}!") # Hi, Patrick!</code></pre>
+          </div>
+        </div>
+      </div>
+
+      
+
+      <div class="info-box yellow">
+        <ul><h3>Wichtige Unterschiede zwischen JavaScript und Python</h3>
+          <ul><strong>JavaScript</strong>
+            <li>Für das Web gemacht: fügt Websites Interaktivität hinzu (Animationen, Klickverarbeitung, Serveranforderungen).</li>
+            <li>Mit Node.js wird es für Server, Desktop-Anwendungen (VS Code) und sogar IoT verwendet.</li>
+            <li>Funktioniert im Browser "out of the box".</li>
+          </ul>
+          <ul><strong>Python</strong>
+            <li>Eine universelle Sprache für Wissenschaft, Automatisierung, Datenanalyse, maschinelles Lernen und Server.</li>
+            <li>Funktioniert nicht direkt im Browser (obwohl es Experimente gibt, z. B. PyScript).</li>
+            <li>Wird häufig für Skripte verwendet, die Aufgaben automatisieren.</li>
+          </ul>
+        </ul>
+      </div>
+
+
+      <div class="two-column">
+        <div class="column">
+          <div class="code-container">
+            <h4>JS für Web</h4>
+  <pre><code class="language-js" data-highlight="true">document.getElementById("button").addEventListener("click", () => {
+  alert("You pressed the button!");
+});</code></pre>
+          </div>
+        </div>
+        <div class="column">
+          <div class="code-container">
+            <h4>Python für die Automatisierung</h4>
+  <pre><code class="language-py" data-highlight="true">import os
+for file in os.listdir("."):
+    if file.endswith(".txt"):
+        print(f"Text file found: {file}")</code></pre>
+          </div>
+        </div>
+      </div>
+
+
+      <h3>Sonstige Sprachvergleiche</h3>
+      <div class="two-column">
+        <div class="column">
+          <div class="code-container">
+            <ul><h4>JavaScript</h4>
+              <li>Die Syntax ähnelt eher Sprachen wie C oder Java: geschweifte Klammern {} für Codeblöcke, Semikolons (obwohl optional).</li>
+              <li>Eher "frei", was aber zu unerwarteten Fehlern führen kann.</li>
+            </ul>
+  <pre><code class="language-js" data-highlight="true">for (let i = 0; i &lt; 3; i++) {
+    console.log(i);
+}
+// Output: 0, 1, 2</code></pre>
+          </div>
+        </div>
+        <div class="column">
+          <div class="code-container">
+            <ul><h4>Python</h4>
+              <li>Saubere und minimalistische Syntax, bei der Einrückungen Codeblöcke definieren.</li>
+              <li>Zwingt durch strenge Formatierungsregeln, lesbaren Code zu schreiben.</li>
+            </ul>
+  <pre><code class="language-py" data-highlight="true">for i in range(3):
+    print(i)
+# Output: 0, 1, 2</code></pre>
+          </div>
+        </div>
+      </div>
+
+      <h3>Typisierung und Verhalten</h3>
+      <div class="two-column">
+        <div class="column">
+          <div class="code-container">
+<pre><code class="language-js" data-highlight="true">console.log("5" + 3); // "53" (String + Zahl = String)
+console.log("5" - 3); // 2 (Der String wird in eine Zahl umgewandelt)</code></pre>
+            <div>JS versucht, den Typ zu „erraten“, was verwirrend sein kann.</div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="code-container">
+  <pre><code class="language-py" data-highlight="true">print("5" + str(3)) # "53" (Wir müssen die Zahl explizit in einen String umwandeln)
+# print("5" + 3) # Fehler! Python errät keine Typen</code></pre>
+            <div>Python ist strenger: Es erfordert explizite Typen für solche Operationen.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="compare-table">
+        <table>
+          <tr>
+            <th colspan="3">Wo zu verwenden: JS vs. Python</th>
+          </tr>
+          <tr class="subheader">
+            <td>Aufgabe</td>
+            <td>JavaScript</td>
+            <td>Python</td>
+          </tr>
+          <tr>
+            <td>Webschnittstellen</td>
+            <td>✅ React, Vue, Angular</td>
+            <td>❌ Eingeschränkt (PyScript, Dash)</td>
+          </tr>
+          <tr>
+            <td>Server</td>
+            <td>✅ Node.js, Express</td>
+            <td>✅ Django, Flask</td>
+          </tr>
+          <tr>
+            <td>Datenanalyse</td>
+            <td>❌ Eingeschränkt (D3.js)</td>
+            <td>✅ Pandas, NumPy</td>
+          </tr>
+          <tr>
+            <td>Maschinelles Lernen</td>
+            <td>❌ TensorFlow.js (Experimente)</td>
+            <td>✅ TensorFlow, Scikit-learn</td>
+          </tr>
+          <tr>
+            <td>Automatisierung</td>
+            <td>❌ Eingeschränkt</td>
+            <td>✅ Skripte, Betriebssystem, Shuttil</td>
+          </tr>
+          <tr>
+            <td>Mobile Apps</td>
+            <td>✅ React Native</td>
+            <td>❌ Kivy (weniger beliebt)</td>
+          </tr>
+          <tr>
+            <td>Desktop-Anwendungen</td>
+            <td>✅ Electron (VS Code, Discord)</td>
+            <td>✅ PyQt, Tkinter</td>
+          </tr>
+          
+        </table>
+      </div>
+
+    </div>
+  </section>
+</template>

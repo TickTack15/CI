@@ -1,0 +1,39 @@
+#slide-11 .block {
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  border-left: 5px solid #2ecc71;
+  padding: 14px;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow-x: auto;
+}
+
+#slide-11 .column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 160px;
+}
+
+#myButton {
+  width: fit-content;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#myButton:hover {
+  background-color: #2980b9;
+}

@@ -1,0 +1,54 @@
+<template>
+  <!-- Слайд 6: TCP TLS -->
+  <section class="slide" id="slide-6">
+    <div class="slide-content">
+      <h2>Navigation. TCP, TLS Protokolle</h2>
+      <h3>TCP</h3>
+      <div class="scene">
+        <div class="actor" id="monitor">
+          <div class="actor-image monitor-image"></div>
+          <div class="actor-name">Browser</div>
+          <div class="speech-bubble" id="monitor-speech-1">Hey Server. Ich möchte mich mit dir verbinden.</div>
+          <div class="speech-bubble" id="monitor-speech-2">Abgemacht</div>
+        </div>
+        <div class="arrows">
+          <div class="arrow-box">
+            <div class="arrow-text">SYN</div>
+            <div class="arrow right"></div>
+          </div>
+          <div class="arrow-box">
+            <div class="arrow-text">SYN-ACK</div>
+            <div class="arrow left"></div>
+          </div>
+          <div class="arrow-box">
+            <div class="arrow-text">ACK</div>
+            <div class="arrow right"></div>
+          </div>
+        </div>
+        <div class="actor" id="server">
+          <div class="actor-image server-image"></div>
+          <div class="actor-name">WEB-Server</div>
+          <div class="speech-bubble" id="server-speech">Ok, aber du musst auch für mich eine Verbindung öffnen.</div>
+        </div>
+      </div>
+      <div class="slide-extra">
+        <h3>Protokoll UDP</h3>
+        <button class="hide-btn">Anzeigen</button>
+        <div class="extra-info hidden">
+          <div class="extra-img">
+            <img width="80%" src="images/TCP-i-UDP2.jpeg" alt="TCP-i-UDP">
+            <div class="speech-bubble" id="UDP">
+              Bloß ein Vermittler beim Versand.
+            </div>
+            <div class="speech-bubble" id="tcp-speech">
+              Ich habe das Paket nicht erhalten. Bitte senden Sie es erneut.
+            </div>
+            <div class="speech-bubble" id="TCP">
+              Zuverlässiges Senden und Empfangen von Daten
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

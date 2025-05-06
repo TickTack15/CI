@@ -1,0 +1,14 @@
+#slide-19 .info-box {
+  display: flex;
+  align-items: center;
+}
+
+#slide-19 .info-box > img {
+  width: 10%;
+}
+
+#slide-19 .code-example {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

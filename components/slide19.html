@@ -1,0 +1,46 @@
+<template>
+  <!-- Слайд 19: SVG -->
+  <section class="slide" id="slide-19">
+    <div class="slide-content">
+      <h2>SVG (Scalable Vector Graphics)</h2>
+      <div class="info-box">
+        Es handelt sich um ein auf der Auszeichnungssprache XML basierendes Bildformat, das zur Erstellung zweidimensionaler Vektorgrafiken verwendet wird. Im Gegensatz zu Rasterbildern (wie PNG oder JPEG) beschreibt SVG Grafiken mithilfe mathematischer Formeln, sodass das Bild ohne Qualitätsverlust skaliert werden kann.
+        <img src="images/svg-icon.svg" alt="">
+      </div>
+        <div class="two-column">
+          <div class="column positive">
+            <ul>
+              <h3>Vorteile von SVG:</h3>
+              <li>Skalierbarkeit ohne Qualitätsverlust</li>
+              <li>Kleine Dateigröße</li>
+              <li>Kann manuell bearbeitet werden</li>
+              <li>Interaktivität und Animation</li>
+              <li>Unterstützung in allen modernen Browsern</li>
+              </ul>
+          </div>
+          <div class="column negative">
+            <ul><h3>Nachteile von SVG:</h3>
+              <li>Nicht geeignet für komplexe Bilder</li>
+              <li>Komplexität bei manueller Erstellung</li>
+              <li>Sicherheitsprobleme</li>
+              </ul>
+          </div>
+        </div>
+
+        <div class="code-example">
+          <svg width="200" height="100">
+            <rect x="10" y="30" width="30" height="70" fill="tomato" />
+            <rect x="60" y="50" width="30" height="50" fill="skyblue" />
+            <rect x="110" y="10" width="30" height="90" fill="lightgreen" />
+          </svg>
+          
+          <pre><code class="language-html" data-highlight="true">&lt;svg width="200" height="100"&gt;
+  &lt;rect x="10" y="30" width="30" height="70" fill="tomato" /&gt;
+  &lt;rect x="60" y="50" width="30" height="50" fill="skyblue" /&gt;
+  &lt;rect x="110" y="10" width="30" height="90" fill="lightgreen" /&gt;
+&lt;/svg&gt;</code></pre>
+        </div>
+
+    </div>
+  </section>
+</template>
