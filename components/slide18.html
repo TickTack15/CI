@@ -1,0 +1,72 @@
+<template>
+  <!-- Слайд 17: Parsing -->
+  <section class="slide" id="slide-18">
+    <div class="slide-content">
+      <h2>Was macht der Browser mit dem empfangenen HTML-Dokument?</h2>
+
+      <div class="info-block">
+
+        <div class="info-block">
+          <h3>Tokenisierung und CSSOM-Aufbau</h3>
+          <img style="width: 100%;" src="images/CSSOM.png" alt="">
+        </div>
+
+        <h3>Erstellen eines CSSOM-Baums</h3>
+        <div class="two-column">
+          <div class="column">
+            <div class="code-container">
+              <pre><code class="language-css" data-highlight="true">body {
+font-size: 1.5rem;
+}
+
+.text {
+color: red;
+}
+
+img {
+max-width: 100%;
+}</code></pre>
+            </div>
+          </div>
+          <div class="column">
+            <p>Für den Code auf der linken Seite sieht der CSS-Baum ungefähr so ​​aus:</p>
+            <img style="width: 100%;" src="images/CSSOM.webp" alt="">
+          </div>
+        </div>
+       </div>
+
+       <div class="info-block">
+        <h3>Render Tree</h3>
+        <img style="width: 100%;" src="images/DOM-CSSOM.webp" alt="">
+        <img style="width: 100%;" src="images/paint.webp" alt="">
+      </div>
+
+       <div class="info-block">
+        <h3>Layout</h3>
+        <a href="https://i.fbcd.co/products/original/d9105de96e3349d251df22fe9187c256361474d83848e0d77fea71b47d68659d.jpg">
+          <img style="width: 100%;" src="images/layouts.jpg" alt="">
+        </a>
+      </div>
+
+         <div class="info-block">
+          <h3>JavaScript-Ausführungt</h3>
+          <h3 class="title center">AST - abstrakter Syntaxbaum</h3>
+
+          <div class="two-column">
+            <div class="column">
+              <img style="width: 100%;" src="images/js-tree.jpeg" alt="">
+            </div>
+
+            <div class="column">
+              <div class="code-container">
+                <pre><code class="language-js" data-highlight="true">const age = 25;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+    </div>
+  </section>
+</template>

@@ -1,0 +1,469 @@
+<template>
+  <!-- Слайд 12: HTML structure -->
+  <section class="slide" id="slide-12">
+    <div class="slide-content">
+      <h2>HTML Struktur</h2>
+      <h3>Tags</h3>
+      <div class="tag-example">
+        <div class="tooltip open">Eröffnungstag</div>
+        <div class="tooltip value">Inhalt</div>
+        <div class="tooltip attr-value">Attributwert</div>
+        <pre><code class="language-html" data-highlight="true">&lt;a href="https://example.com"&gt;Go to example.com&lt;/a&gt;</code></pre>
+        <div class="tooltip attr">Attribut</div>
+        <div class="tooltip close">Schließendes Tag</div>
+      </div>
+          <div class="two-column tags-container">
+            <div class="column-container">
+              <div class="column table-column">
+                <table>
+                  <tr>
+                    <th colspan="2">Oberstes Level</th>
+                  </tr>
+                  <tr>
+                    <td>&lt;!DOCTYPE&gt;</td>
+                    <td>Dient zur Bestimmung des Dokumenttyps. Dadurch wird dem Browser mitgeteilt, dass es sich um ein HTML-Dokument handelt und nicht um etwas anderes.</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;html&gt;&lt;/html&gt;</td>
+                    <td>Das Wurzelelement eines HTML-Dokuments. Container mit allen Inhalten der Seite.</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;head&gt;&lt;/head&gt;</td>
+                    <td>Enthält Service-Tags, die für die Arbeit von Suchmaschinen und Browsern bestimmt sind. Mit anderen Worten, ein Container für HTML-Dokumentmetadaten.</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;body&gt;&lt;/body&gt;</td>
+                    <td>Enthält Arbeitselemente, die für Benutzer sichtbar sind. Normalerweise handelt es sich dabei um informative Inhalte.</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="column code-column">
+                <div class="code-container">
+                  <pre><code class="language-html" data-highlight="true">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Beispiel&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+
+            <div class="column-container">
+              <div class="column table-column">
+                <table>
+                  <tr>
+                    <th colspan="2">Metadaten</th>
+                  </tr>
+                  <tr>
+                    <td>&lt;meta&gt;</td>
+                    <td>Seitenmetadaten</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;title&gt;&lt;/title&gt;</td>
+                    <td>Titel, in einfachen Worten - der Name des HTML-Dokuments</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="column code-column">
+                <div class="code-container">
+                  <pre><code class="language-html" data-highlight="true">&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Beispiel&lt;/title&gt;
+&lt;/head&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="column-container">
+              <div class="column table-column">
+                <table>
+                  <tr>
+                    <th colspan="2">Service</th>
+                  </tr>
+                  <tr>
+                    <td>&lt;!--—…—--&gt;</td>
+                    <td>Kommentar</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;link&gt;</td>
+                    <td>Anbindung eines externen Stylesheets</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;script&gt;&lt;/script&gt;</td>
+                    <td>Verbinden von Skripten mit einer Webseite</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;style&gt;&lt;/style&gt;</td>
+                    <td>Enthält eingebettete Stylesheets</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="column code-column">
+                <div class="code-container">
+                  <pre><code class="language-html" data-highlight="true">&lt;head&gt;
+  &lt;link rel="stylesheet" href="styles/main.css"&gt;
+  &lt;script src="scripts/main.js" type="module"&gt;&lt;/script&gt;
+  &lt;!--Kommentar--&gt;
+  &lt;style&gt;
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="column-container">
+              <div class="column table-column">
+                <table>
+                  <tr>
+                    <th colspan="2">Zum Formatieren von Text</th>
+                  </tr>
+                  <tr>
+                    <td>&lt;h1&gt;&lt;/h1&gt; — &lt;h6&gt;&lt;/h6&gt;</td>
+                    <td>Sechsstufige Überschriften</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;p&gt;&lt;/p&gt;</td>
+                    <td>Absätze im Text</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;br&gt;</td>
+                    <td>Text in eine neue Zeile umbrechen</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;q&gt;&lt;/q&gt;</td>
+                    <td>Kurzes Zitat</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;strong&gt;&lt;/strong&gt;</td>
+                    <td>Hervorhebung wichtiger Texte</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;em&gt;&lt;/em&gt;</td>
+                    <td>Wichtiger kursiver Text</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="column code-column">
+                <div class="code-container">
+                  <pre><code class="language-html" data-highlight="true">&lt;body&gt;
+  &lt;h1&gt;Header 1&lt;/h1&gt;
+  &lt;h3&gt;Header 3&lt;/h3&gt;
+  &lt;h6&gt;Header 6&lt;/h6&gt;
+  &lt;p&gt;
+  &lt;strong&gt;Lorem ipsum&lt;/strong&gt; dolor sit amet consectetur adipisicing elit.&lt;br&gt;&lt;em&gt;Lorem ipsum&lt;/em&gt; dolor sit amet consectetur adipisicing elit.
+  &lt;/p&gt;
+&lt;/body&gt;
+</code></pre>
+                </div>
+                <div class="example-preview">
+                  <h1>Header 1</h1>
+                  <h3>Header 3</h3>
+                  <h6>Header 6</h6>
+                  <p>
+                  <strong>Lorem ipsum</strong> dolor sit amet consectetur adipisicing elit.<br><em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="column-container">
+              <div class="column table-column">
+                <table>
+                  <tr>
+                    <th colspan="2">Tabellen</th>
+                  </tr>
+                  <tr>
+                    <td>&lt;table&gt;&lt;/table&gt;</td>
+                    <td>HTML-Tabelle</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;thead&gt;&lt;/thead&gt;</td>
+                    <td>Tabellenkopfblock</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;tbody&gt;&lt;/tbody&gt;</td>
+                    <td>Tabellenkörper</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;tr&gt;&lt;/tr&gt;</td>
+                    <td>Tabellenzeile</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;th&gt;&lt;/th&gt;</td>
+                    <td>Tabellenspaltenüberschrift</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;td&gt;&lt;/td&gt;</td>
+                    <td>Tabellenzelle</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;strong&gt;&lt;/strong&gt;</td>
+                    <td>Hervorhebung wichtiger Texte</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="column code-column">
+                <div class="code-container">
+                  <pre><code class="language-html" data-highlight="true">&lt;table&gt;
+&lt;thead&gt;
+  &lt;tr&gt;
+    &lt;th colspan="3"&gt;Title&lt;/th&gt;
+  &lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+    &lt;td&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&lt;/td>
+    &lt;td&gt;&lt;/td>
+    &lt;td&gt;&lt;/td>
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+</code></pre>
+                </div>
+                <div style="color: white; background-color: #ca1010;">Frage: Was muss ich in den Code schreiben, um der Tabelle eine weitere Zeile hinzuzufügen? (vorläufig)</div>
+                <div class="example-preview">
+                  <table>
+                    <thead>
+                      <tr>
+                        <th colspan="3">Title</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="column-container">
+              <div class="column table-column">
+                <table>
+                  <tr>
+                    <th colspan="2">Listen</th>
+                  </tr>
+                  <tr>
+                    <td>&lt;ol&gt;&lt;/ol&gt;</td>
+                    <td>Geordnete nummerierte Liste</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;ul&gt;&lt;/ul&gt;</td>
+                    <td>Aufzählungsliste</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;li&gt;&lt;/li&gt;</td>
+                    <td>Listenelement</td>
+                  </tr>
+                </table>
+              </div>
+              <div class="column code-column">
+                <div class="code-container">
+                  <pre><code class="language-html" data-highlight="true">&lt;ul&gt;
+  &lt;li&gt;Element 1&lt;/li&gt;
+  &lt;li&gt;Element 2&lt;/li&gt;
+  &lt;li&gt;Element 3&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+  &lt;li&gt;Element 1&lt;/li&gt;
+  &lt;li&gt;Element 2&lt;/li&gt;
+  &lt;li&gt;Element 3&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+                </div>
+                <div class="example-preview">
+                  <ul>
+                    <li>Element 1</li>
+                    <li>Element 2</li>
+                    <li>Element 3</li>
+                  </ul>
+                  <ol>
+                    <li>Element 1</li>
+                    <li>Element 2</li>
+                    <li>Element 3</li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="column-container">
+              <div class="column table-column">
+                <table>
+                  <tr>
+                    <th colspan="2">Formen</th>
+                  </tr>
+                  <tr>
+                    <td>&lt;form&gt;&lt;/form&gt;</td>
+                    <td>HTML-Form</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;input&gt;
+                    <td>Multifunktionale Formularfelder</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;textarea&gt;&lt;/textarea&gt;</td>
+                    <td>Mehrzeiliges Formularfeld</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;label&gt;&lt;/label&gt;</td>
+                    <td>текстовая метка для элемента &lt;input&gt;</td>
+                  </tr>
+                  <tr>
+                    <td>&lt;button&gt;&lt;/button&gt;</td>
+                    <td>interaktiver Button</td>
+                  </tr>
+                </table>
+                <div class="example-preview">
+                  <form action="/index.html" class="form-section">
+                    <div class="form-group">
+                      <h3>What do you like to learn?</h3>
+                      <div class="radio-group">
+                        <input type="radio" id="html" name="fav_language" value="HTML">
+                        <label for="html">HTML</label>
+                      </div>
+                      <div class="radio-group">
+                        <input type="radio" id="css" name="fav_language" value="CSS">
+                        <label for="css">CSS</label>
+                      </div>
+                      <div class="radio-group">
+                        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                        <label for="javascript">JavaScript</label>
+                      </div>
+                    </div>
+                    
+                    <div class="form-group">
+                      <div class="checkbox-group">
+                        <input type="checkbox" name="cheese" id="cheese">
+                        <label for="cheese">Do you like cheese?</label>
+                      </div>
+                      
+                      <div class="textarea-container" id="cheese-details-container" style="display: none;">
+                        <label for="cheese-details">Which one?</label>
+                        <textarea id="cheese-details" name="cheese-details" rows="4" placeholder="Tell us more..."></textarea>
+                      </div>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Send</button>
+                  </form>
+              <div style="color: white; background-color: #ca1010;">Attribute (mehrere beschreiben)</div>
+
+                </div>
+              </div>
+              <div class="column code-column">
+                <div class="code-container">
+                  <pre><code class="language-html" data-highlight="true">&lt;form action="/index.html" class="form-section"&gt;
+  &lt;div class="form-group"&gt;
+    &lt;h3&gt;What do you like to learn?&lt;/h3&gt;
+    &lt;div class="radio-group"&gt;
+      &lt;input
+        type="radio"
+        id="html"
+        name="fav_language"
+        value="HTML"
+      &gt;
+      &lt;label for="html"&gt;HTML&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="radio-group"&gt;
+      &lt;input
+        type="radio"
+        id="css"
+        name="fav_language"
+        value="CSS"
+      &gt;
+      &lt;label for="css"&gt;CSS&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;div class="radio-group"&gt;
+      &lt;input
+        type="radio"
+        id="javascript"
+        name="fav_language"
+        value="JavaScript"
+      &gt;
+      &lt;label for="javascript"&gt;
+        JavaScript
+      &lt;/label&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+    
+  &lt;div class="form-group"&gt;
+    &lt;div class="checkbox-group"&gt;
+      &lt;input
+        type="checkbox"
+        name="cheese"
+        id="cheese"
+      &gt;
+      &lt;label for="cheese"&gt;
+        Do you like cheese?
+      &lt;/label&gt;
+    &lt;/div&gt;
+    
+    &lt;div
+      class="textarea-container"
+      id="cheese-details-container"
+      style="display: none;"
+    &gt;
+      &lt;label for="cheese-details"&gt;
+        Which one?
+      &lt;/label&gt;
+      &lt;textarea
+        id="cheese-details"
+        name="cheese-details"
+        rows="4"
+        placeholder="Tell us more..."&gt;
+      &lt;/textarea&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;button
+    type="submit"
+    class="submit-btn"
+  &gt;
+    Send
+  &lt;/button&gt;
+&lt;/form&gt;
+</code></pre>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+    </div>
+  </section>
+</template>

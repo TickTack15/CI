@@ -1,0 +1,9 @@
+#nav-desc {
+  text-align: center;
+}
+
+.nav-file-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}

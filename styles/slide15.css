@@ -1,0 +1,36 @@
+#slide-15 .info-box.green {
+  background-color: #ccffc3;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #20800f;
+}
+
+#slide-15 .info-box.green strong {
+  color: #20800f;
+}
+#slide-15 .info-box.yellow {
+  background-color: #fff3ac;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-left: 5px solid #fed800;
+}
+
+#slide-15 .info-box.yellow strong {
+  color: #c3a600;
+}
+
+.compare-table table th:first-child,
+.compare-table table td:first-child {
+  width: auto; 
+}
+
+.compare-table table th:last-child,
+.compare-table table td:last-child {
+  width: auto; 
+}
+
+table .subheader {
+  background-color: #97e5ff;
+}

@@ -1,0 +1,127 @@
+/* #slide-6 .slide-content {
+  height: 80vh;
+} */
+
+.scene {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  align-self: center;
+}
+
+.monitor-image {
+  background-color: #e6f7ff;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%232196f3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" /></svg>');
+}
+
+.arrow {
+  width: 400px;
+  height: 24px;
+}
+
+.arrow-text {
+  display: block;
+  text-align: center;
+}
+
+.arrow.right {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 24"><polygon points="4,8 4,16 100,16 100,20 120,12 100,4 100,8" fill="%2300838f" stroke="%2300838f" stroke-width="0.5"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.arrow.left {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 24"><polygon points="116,8 116,16 20,16 20,20 0,12 20,4 20,8" fill="%2300838f" stroke="%2300838f" stroke-width="0.5"/></svg>');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+#slide-6 .speech-bubble {
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 250px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  opacity: 1;
+  transition: all 0.3s ease;
+  z-index: 10;
+  text-align: center;
+  min-width: 180px;
+}
+
+#slide-6 #monitor-speech-1 {
+  left: 100%;
+  transform: translateY(-220%);
+  background-color: #e6f7ff;
+}
+
+#slide-6 #monitor-speech-2 {
+  left: 100%;
+  transform: translateY(-50%);
+  background-color: #e6f7ff;
+}
+
+#slide-6 #server-speech {
+  right: 100%;
+  transform: translateY(-130%);
+  background-color: #fff8e1;
+}
+
+.extra-img {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.extra-img img {
+  display: block;
+  width: 80%;
+}
+
+#slide-6 #UDP,
+#slide-6 #TCP,
+#slide-6 #tcp-speech {
+  position: absolute;
+  border: 3px solid;
+}
+
+#slide-6 #UDP {
+  top: 2%;
+  left: 2%;
+  border-color: #ff9800;
+  background-color: #fff8e1;
+}
+
+#slide-6 #TCP {
+  top: 73%;
+  right: 15%;
+  border-color: #0b9a7b;
+  background-color: #ade7da;
+}
+
+#slide-6 #tcp-speech {
+  top: 45%;
+  right: 16%;
+  border-color: #0b9a7b;
+}
+
+#slide-6 #tcp-speech:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  border-width: 10px 10px 10px 0;
+  border-style: solid;
+  border-color: transparent white transparent transparent;
+}
+
+#slide-6 #tcp-speech.speech-bubble:after {
+  left: -10px; /* Или другое значение, которое нравится */
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}

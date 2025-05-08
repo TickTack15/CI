@@ -1,0 +1,56 @@
+<template>
+  <!-- Слайд 7: TCP TLS -->
+  <section class="slide" id="slide-7">
+    <div class="slide-content">
+      <h2>Navigation. TCP, TLS Protokolle</h2>
+      <h3>TLS</h3>
+      <div class="scene">
+        <div class="actor" id="monitor">
+          <div class="actor-image monitor-image"></div>
+          <div class="actor-name">Browser</div>
+          <div class="speech-bubble" id="monitor-speech-1">
+            <span>1.</span> Hallo Server, ich möchte eine sichere Verbindung mit dir herstellen.
+          </div>
+          <div class="speech-bubble" id="monitor-speech-2">
+            <span>3.</span> Ich habe dein Zertifikat überprüft. Lassen wir uns die zu verwendenden Verschlüsselungsschlüssel vereinbaren.
+          </div>
+          <div class="speech-bubble" id="monitor-speech-3">
+            <span>5.</span> Super! Meine Seite ist auch fertig. Wir haben jetzt eine sichere, verschlüsselte Verbindung.
+          </div>
+        </div>
+        <div class="arrows">
+          <div class="arrow-box">
+            <div class="arrow-text">Client Hello</div>
+            <div class="arrow right"></div>
+          </div>
+          <div class="arrow-box">
+            <div class="arrow-text">Server Hello + Certificate</div>
+            <div class="arrow left"></div>
+          </div>
+          <div class="arrow-box">
+            <div class="arrow-text">Key Share</div>
+            <div class="arrow right"></div>
+          </div>
+          <div class="arrow-box">
+            <div class="arrow-text">Server Finished</div>
+            <div class="arrow left"></div>
+          </div>
+          <div class="arrow-box">
+            <div class="arrow-text">Client Finished</div>
+            <div class="arrow right"></div>
+          </div>
+        </div>
+        <div class="actor" id="server">
+          <div class="actor-image server-image"></div>
+          <div class="actor-name">WEB-Server</div>
+          <div class="speech-bubble" id="server-speech-1">
+            <span>2.</span> Hallo! Hier ist mein Sicherheitszertifikat, damit du meine Identität überprüfen könntest.
+          </div>
+          <div class="speech-bubble" id="server-speech-2">
+            <span>4.</span> Ich habe die wichtigsten Informationen verarbeitet. Mein Teil des Handshakes ist abgeschlossen.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

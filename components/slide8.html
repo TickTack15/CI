@@ -1,0 +1,48 @@
+<template>
+  <!-- Слайд 7: TCP TLS -->
+  <section class="slide" id="slide-7">
+    <div class="slide-content">
+      <h2>Datenempfang. HTTP Protokoll</h2>
+      <h3>HTTP</h3>
+      <div class="scene">
+        <div class="actor" id="monitor">
+          <div class="actor-image monitor-image"></div>
+          <div class="actor-name">Browser</div>
+        </div>
+
+        <div class="http-blocks-container">
+          <div class="http-block request">
+            <div class="http-title">HTTP Request</div>
+            <pre><code><span data-tooltip="HTTP-Anforderungsmethode, HTTP-Pfad und -Version">GET /index.html HTTP/1.1</span><span data-tooltip="Die Domäne des Servers, an den die Anfrage gesendet wird">Host: www.example.com</span><span data-tooltip="Informationen über den Browser und das System des Nutzers">User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64)</span><span data-tooltip="Datenformate die der Kunde erwartet zu erhalten">Accept: text/html,application/xhtml+xml,application/xml;q=0.9</span><span data-tooltip="Präferenzen für die Antwortsprache">Accept-Language: de-DE,de;q=0.9,en;q=0.8</span><span data-tooltip="Unterstützung, um Verbindungen offen zu halten">Connection: keep-alive</span></code></pre>
+          </div>
+  
+          <div class="arrows">
+            <div class="arrow-box">
+              <div class="arrow-text">HTTP Request</div>
+              <div class="arrow right"></div>
+            </div>
+            <div class="arrow-box">
+              <div class="arrow left"></div>
+              <div class="arrow-text">HTTP Response</div>
+            </div>
+          </div>
+  
+          <div class="http-block response">
+            <div class="http-title">HTTP Response</div>
+            <pre><code><span data-tooltip="HTTP-Version, Statuscode und Textbeschreibung">HTTP/1.1 200 OK</span><span data-tooltip="Datum und Uhrzeit, zu der der Server die Antwort generiert hat">Date: Mon, 27 Apr 2025 12:28:53 GMT</span><span data-tooltip="Servertypinformationen">Server: Apache/2.4.41 (Ubuntu)</span><span data-tooltip="Inhaltstyp und Zeichenkodierung">Content-Type: text/html; charset=UTF-8</span><span data-tooltip="Größe des Antworttexts in Bytes">Content-Length: 3056</span><span data-tooltip="Die Verbindung bleibt nach der Antwort bestehen">Connection: keep-alive</span></code></pre>
+          </div>
+        </div>
+
+        <div class="actor" id="server">
+          <div class="actor-image server-image"></div>
+          <div class="actor-name">WEB-Server</div>
+        </div>
+          
+        </div>
+        
+        <div id="tooltip" class="tooltip"></div>
+      </div>
+      
+    </div>
+  </section>
+</template>

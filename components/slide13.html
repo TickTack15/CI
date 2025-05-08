@@ -1,0 +1,147 @@
+<template>
+  <!-- Слайд 13: CSS structure -->
+  <section class="slide" id="slide-13">
+    <div class="slide-content">
+      <h2>Anatomie eines CSS-Regelsatzes</h2>
+      <h3>Grundlegendes Konzept</h3>
+      <div class="info-box">
+        <ul>CSS hat wie jede Sprache eine eigene Syntax. Es gibt Regeln – Werte, die das Aussehen von Elementen bestimmen. Eine CSS-Regel besteht aus einem Selektor, CSS-Eigenschaften und deren Werten:
+          <li>Selektoren sind Beschriftungen, die dem Browser helfen zu verstehen, auf welchen Teil des HTML-Codes die angegebenen Parameter angewendet werden sollen.</li>
+          <li>CSS-Eigenschaften sind spezifische Designparameter, wie beispielsweise die Farbe eines Elements oder Textes (color) oder die Hintergrundfarbe (background).</li>
+          <li>Ein Wert ist einfach ein Wert und wird als Text oder Zahl ausgedrückt, z. B. black</li>
+        </ul>
+      </div>
+      <div class="block">
+        CSS3 ist die nächste Generation von CSS, die sich noch in der Entwicklung befindet. Mit seiner Hilfe können wir Elemente ohne Verwendung von JavaScript animieren, Schatten und Farbverläufe erstellen und die Ecken von Blöcken abrunden.
+      </div>
+
+      <div class="two-column">
+        <div class="column">
+          <div class="code-container">
+  <pre><code class="language-css" data-highlight="true">
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, sans-serif;
+  background-color: rgb(46, 204, 113);
+  color: #333;
+}
+
+h1, h2, h3, h4 {
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+    </code></pre>
+          </div>
+        </div>
+        <div class="column">
+          <ul><h4>In diesem Beispiel:</h4>
+            <li><code>*, body, h1, h2...</code> - sind Selektoren</li>
+            <li><code>margin, font-family, color...</code> - Eigenschaften</li>
+            <li><code>border-box, 20px, #2c3e50, 0...</code> - verschiedene Optionen für akzeptable Werte für Eigenschaften</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="info-box">
+        Kaskadierbarkeit und Spezifität
+        CSS arbeitet nach dem Prinzip der Kaskadierung, d. h., Stile werden in einer bestimmten Reihenfolge angewendet und Regeln können sich je nach Spezifität der Selektoren überlappen.
+      </div>
+
+      <div class="two-column">
+        <div class="column">
+          <div class="code-container">
+  <pre><code class="language-css" data-highlight="true">body {
+  background-color: #f5f5f5;
+}
+
+h2 {
+  color: #2c3e50;
+  color: #eee;
+}
+
+body {
+  background-color: #5e5e5e;
+}</code></pre>
+          </div>
+        </div>
+        <div class="column">
+          <div style="color: white; background-color: #ca1010;">Frage: Welcher Stil würde in diesem Fall verwendet werden?</div>
+        </div>
+      </div>
+
+      <h3>Weitere interessante Funktionen</h3>
+      <div class="two-column">
+        <div class="column">
+          <div class="code-container">
+            <h4>Medienabfragen</h4>
+  <pre><code class="language-css" data-highlight="true">@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}</code></pre>
+          </div>
+        </div>
+        <div class="column description">
+          <div class="code-description">Verwenden von Medienabfragen zum Anpassen von Seiten an verschiedene Geräte</div>
+        </div>
+      </div>
+
+      <div class="two-column">
+        <div class="column">
+          <div class="code-container">
+            <h4>Pseudoklassen und Pseudoelementen</h4>
+  <pre><code class="language-css" data-highlight="true">// Pseudoklass
+a:hover {
+  color: red;
+}
+
+// Pseudoelement
+p::before {
+  content: "★";
+  color: gold;
+}</code></pre>
+          </div>
+        </div>
+        <div class="column description">
+          <div class="code-description">Beispielverwendung für Links. Wenn man mit der Maus über einen Link fährt, ändert sich die Textfarbe zu Rot.</div>
+          <div class="code-description">Beispiel für das Hinzufügen von Inhalten vor oder nach einem Element.</div>
+        </div>
+        
+      </div>
+      <div class="info-box">
+        Pseudoelemente in CSS sind spezielle Konstrukte, mit denen man Teile eines Elements formatieren kann. Sie sind nützlich, wenn man Stile oder sogar Inhalte hinzufügen muss, ohne den HTML-Code zu ändern.
+      </div>
+
+      <div class="two-column">
+        <div class="column">
+          <div class="code-container">
+            <h4>CSS-Animationen und -Übergänge</h4>
+  <pre><code class="language-css" data-highlight="true">@keyframes slide {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+.element:hover {
+  animation: slide 2s ease-in-out;
+  animation-fill-mode: forwards;
+}
+</code></pre>
+          </div>
+        </div>
+        <div class="column description">
+          <div class="code-description">Das Element bewegt sich in 2 Sekunden und bleibt dort</div>
+          <div class="animation initial">
+            Element
+          </div>
+          <div class="animation element">
+            Element
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

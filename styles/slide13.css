@@ -1,0 +1,44 @@
+#slide-13 .block {
+  background: #f5f5f5;
+  border-radius: 8px;
+  border-left: 5px solid #2ecc71;
+  padding: 14px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  overflow-x: auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column.description {
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+
+@keyframes slide {
+  from { transform: translateX(0); }
+  to { transform: translateX(100%); }
+}
+
+.initial {
+  width: fit-content;
+  background-color: #447fd8;
+  color: white;
+  padding: 4px;
+}
+
+.element {
+  width: fit-content;
+  background-color: #2ecc71;
+  color: white;
+  padding: 4px;
+}
+
+.element:hover {
+  animation: slide 2s ease-in-out;
+  animation-fill-mode: forwards;
+}

@@ -1,0 +1,171 @@
+.scene-5 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.actor-column {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+.actor {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin: 10px;
+}
+
+.actor-image {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  border: 4px solid #fff;
+  transition: all 0.3s ease;
+}
+
+.scene-5 .actor#user::after,
+.scene-5 .actor#browser::after,
+.scene-5 .actor#provider::after {
+  content: '';
+  position: absolute;
+  left: 195px;
+  top: 75px;
+  height: 3px;
+  width: 100px;
+  background-color: #7088ac;
+}
+
+.scene-5 .actor#server::after {
+  content: '';
+  position: absolute;
+  left: 100px;
+  bottom: 215px;
+  height: 100px;
+  width: 3px;
+  background-color: #7088ac;
+}
+
+
+@keyframes move-gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.scene-5 .actor.active#user::after,
+.scene-5 .actor.active#browser::after,
+.scene-5 .actor.active#provider::after {
+  background: linear-gradient(
+    270deg,
+    #7088ac,
+    #ffffff,
+    #7088ac
+  );
+  background-size: 300% 100%;
+  animation: move-gradient 2s infinite ease-in-out;
+}
+
+
+.user-image {
+  background-color: #f0e6ff;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%239c27b0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>');
+}
+
+.browser-image {
+  background-color: #e6f7ff;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%232196f3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="21.17" y1="8" x2="12" y2="8"/><line x1="3.95" y1="6.06" x2="8.54" y2="14"/><line x1="10.88" y1="21.94" x2="15.46" y2="14"/></svg>');
+}
+
+.provider-image {
+  background-color: #e6ffe6;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%234caf50" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="8" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="12" x2="6" y2="12"/><line x1="10" y1="12" x2="10" y2="12"/><line x1="14" y1="12" x2="14" y2="12"/><line x1="18" y1="12" x2="18" y2="12"/><path d="M2 9l4 -4"/><path d="M22 9l-4 -4"/></svg>');
+}
+
+.dns-image {
+  background-color: #fff0f0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23f44336" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 5v6c0 1.66-4 3-9 3s-9-1.34-9-3V5"/><path d="M3 11v6c0 1.66 4 3 9 3s9-1.34 9-3v-6"/></svg>');
+}
+
+.server-image {
+  background-color: #fff8e1;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23ff9800" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6" y2="6"/><line x1="6" y1="18" x2="6" y2="18"/></svg>');
+}
+
+.actor.active .actor-image {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.actor-name {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.speech-bubble {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 250px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    top: 80%;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    z-index: 10;
+    text-align: center;
+    min-width: 180px;
+}
+
+.actor.active .speech-bubble {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#slide-5 .speech-bubble:after {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 0 10px 10px;
+    border-style: solid;
+    border-color: white transparent;
+}
+
+.hide-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  margin: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hide-btn:hover {
+  background-color: #2980b9;
+}
+
+.hidden {
+  display: none;
+}
