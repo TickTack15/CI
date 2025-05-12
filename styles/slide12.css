@@ -4,6 +4,10 @@
   margin: 0 auto;
 }
 
+#slide-12 strong {
+  background: #333;
+}
+
 #slide-12 .tag-example code {
   border-radius: 10px;
 }

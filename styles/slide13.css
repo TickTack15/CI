@@ -39,6 +39,5 @@
 }
 
 .element:hover {
-  animation: slide 2s ease-in-out;
-  animation-fill-mode: forwards;
+  animation: slide 2s forwards;
 }

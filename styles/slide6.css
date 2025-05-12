@@ -56,19 +56,19 @@
 
 #slide-6 #monitor-speech-1 {
   left: 100%;
-  transform: translateY(-220%);
+  transform: translateY(-150%);
   background-color: #e6f7ff;
 }
 
 #slide-6 #monitor-speech-2 {
   left: 100%;
-  transform: translateY(-50%);
+  transform: translateY(-10%);
   background-color: #e6f7ff;
 }
 
 #slide-6 #server-speech {
   right: 100%;
-  transform: translateY(-130%);
+  transform: translateY(-100%);
   background-color: #fff8e1;
 }
 
@@ -97,15 +97,26 @@
   background-color: #fff8e1;
 }
 
+.bubble {
+  position: absolute;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  text-align: center;
+  min-width: 180px;
+}
+
 #slide-6 #TCP {
-  top: 73%;
-  right: 15%;
+  top: 82%;
+  right: 10%;
+  width: 340px;
   border-color: #0b9a7b;
   background-color: #ade7da;
 }
 
 #slide-6 #tcp-speech {
-  top: 45%;
+  top: 44%;
   right: 16%;
   border-color: #0b9a7b;
 }
@@ -121,7 +132,7 @@
 }
 
 #slide-6 #tcp-speech.speech-bubble:after {
-  left: -10px; /* Или другое значение, которое нравится */
+  left: -10px;
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
 }

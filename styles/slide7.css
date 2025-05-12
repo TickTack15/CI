@@ -4,10 +4,15 @@
 
 #slide-7 .scene {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-top: 100px;
   margin-bottom: 40px;
   align-self: center;
+}
+
+#slide-7 .arrows {
+  position: relative;
+  left: 2%;
 }
 
 #slide-7 .speech-bubble {
@@ -16,10 +21,9 @@
   border-radius: 10px;
   padding: 15px;
   max-width: 250px;
+  font-size: 18px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  /* opacity: 0; */
   opacity: 1;
-  /* transform: translateY(-200%); */
   transition: all 0.3s ease;
   z-index: 10;
   text-align: center;
@@ -28,31 +32,31 @@
 
 #slide-7 #monitor-speech-1 {
   left: 100%;
-  transform: translateY(-210%);
+  transform: translateY(-180%);
   background-color: #e6f7ff;
 }
 
 #slide-7 #monitor-speech-2 {
   left: 100%;
-  transform: translateY(-80%);
+  transform: translateY(-60%);
   background-color: #e6f7ff;
 }
 
 #slide-7 #monitor-speech-3 {
   left: 100%;
-  transform: translateY(30%);
+  transform: translateY(50%);
   background-color: #e6f7ff;
 }
 
 #slide-7 #server-speech-1 {
   right: 100%;
-  transform: translateY(-150%);
+  transform: translateY(-130%);
   background-color: #fff8e1;
 }
 
 #slide-7 #server-speech-2 {
   right: 100%;
-  transform: translateY(-30%);
+  transform: translateY(-20%);
   background-color: #fff8e1;
 }
 
@@ -65,4 +69,3 @@
   font-weight: bold;
   color: #ff9800;
 }
-

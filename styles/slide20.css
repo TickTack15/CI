@@ -1,0 +1,9 @@
+#slide-20 .two-column {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#slide-20 .column {
+  width: 50%;
+}

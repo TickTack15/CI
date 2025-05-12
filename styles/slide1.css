@@ -1,0 +1,24 @@
+.tech-icons {
+  display: flex;
+  flex-direction: column;
+}
+
+.icons-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.tech-icon {
+  width: 25%;
+}
+
+.tip {
+  align-self: flex-end;
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.tip p {
+  margin: 0;
+  text-align: end;
+}

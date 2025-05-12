@@ -109,46 +109,46 @@
 }
 
 .actor.active .actor-image {
-    transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .actor-name {
-    margin-top: 15px;
-    font-weight: bold;
-    color: #333;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
 }
 
 .speech-bubble {
-    position: absolute;
-    background-color: white;
-    border-radius: 10px;
-    padding: 15px;
-    max-width: 250px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    top: 80%;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.3s ease;
-    z-index: 10;
-    text-align: center;
-    min-width: 180px;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 250px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  top: 80%;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+  z-index: 10;
+  text-align: center;
+  min-width: 180px;
 }
 
 .actor.active .speech-bubble {
-    opacity: 1;
-    transform: translateY(0);
+  opacity: 1;
+  transform: translateY(0);
 }
 
 #slide-5 .speech-bubble:after {
-    content: '';
-    position: absolute;
-    top: -10px;
-    left: 50%;
-    margin-left: -10px;
-    border-width: 0 10px 10px;
-    border-style: solid;
-    border-color: white transparent;
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 0 10px 10px;
+  border-style: solid;
+  border-color: white transparent;
 }
 
 .hide-btn {

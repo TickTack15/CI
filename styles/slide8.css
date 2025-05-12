@@ -1,5 +1,10 @@
+#slide-8 .scene {
+  align-items: center;
+}
+
 .http-blocks-container {
   display: flex;
+  flex-direction: column;
   flex: 1;
   gap: 20px;
   justify-content: center;
@@ -10,8 +15,10 @@
   width: 150px;
 }
 
-#slide-8 .arrows {
-  margin-top: 50px;
+#slide-8 .arrow-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .http-block {
@@ -26,7 +33,7 @@
 
 .http-title {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   margin-bottom: 5px;
   color: #2c3e50;
 }
@@ -51,6 +58,7 @@
   margin: 0;
   padding: 1px 4px;
   line-height: 1;
+  font-size: 18px;
   white-space: normal;
 }
 
@@ -83,8 +91,8 @@
   border: 1px solid #ccc;
   border-radius: 6px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-  font-size: 14px;
-  max-width: 250px;
+  font-size: 18px;
+  max-width: 350px;
   display: none;
   z-index: 100;
 }

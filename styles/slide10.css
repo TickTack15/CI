@@ -10,6 +10,12 @@
 }
 
 #slide-10 img {
+  position: relative;
+  top: -3%;
   width: 70%;
   margin: 0 auto;
+}
+
+#slide-10 .info-box {
+  margin: 0;
 }

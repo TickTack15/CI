@@ -9,8 +9,32 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f5f5f5;
   color: #333;
-  line-height: 1.6;
+  line-height: 1.4;
+  font-size: 24px;
   cursor: url(../images/sword.png), auto;
+}
+
+strong {
+  background: linear-gradient(90deg, #ee0979, #8e2de2, #4a00e0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* для Firefox */
+  text-fill-color: transparent;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #d60e6f;
+}
+
+a:hover {
+  cursor: url(../images/sword.png);
+}
+
+button {
+  font-size: 18px;
 }
 
 .presentation-container {
@@ -78,12 +102,12 @@ h3 {
 }
 
 p {
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 ul, ol {
   margin-bottom: 20px;
-  margin-left: 20px;
+  margin-left: 26px;
 }
 
 /* Двухколоночный лейаут */

@@ -6,10 +6,10 @@
 
       <div class="info-box green">
         <ul><h3>Was JavaScript und Python gemeinsam haben?</h3>
-          <li><strong>Hochrangig:</strong> Leicht zu lesen und zu verstehen, verbirgt die komplexen Details der Funktionsweise eines Computers.</li>
-          <li><strong>Dynamisch typisiert:</strong> Der Variablentyp (Zahl, String usw.) muss nicht im Voraus angegeben werden.</li>
-          <li><strong>Vielseitig einsetzbar:</strong> Wird im Web, auf Servern, in der Datenanalyse und in anderen Bereichen verwendet.</li>
-          <li><strong>Haben eine große Community:</strong> Viele Bibliotheken, Frameworks und Tutorials.</li>
+          <li><b>Hochrangig:</b> Leicht zu lesen und zu verstehen, verbirgt die komplexen Details der Funktionsweise eines Computers.</li>
+          <li><b>Dynamisch typisiert:</b> Der Variablentyp (Zahl, String usw.) muss nicht im Voraus angegeben werden.</li>
+          <li><b>Vielseitig einsetzbar:</b> Wird im Web, auf Servern, in der Datenanalyse und in anderen Bereichen verwendet.</li>
+          <li><b>Haben eine große Community:</b> Viele Bibliotheken, Frameworks und Tutorials.</li>
         </ul>
       </div>
 
@@ -30,16 +30,15 @@ print(f"Hi, {name}!") # Hi, Patrick!</code></pre>
         </div>
       </div>
 
-      
 
       <div class="info-box yellow">
         <ul><h3>Wichtige Unterschiede zwischen JavaScript und Python</h3>
-          <ul><strong>JavaScript</strong>
+          <ul><b>JavaScript</b>
             <li>Für das Web gemacht: fügt Websites Interaktivität hinzu (Animationen, Klickverarbeitung, Serveranforderungen).</li>
             <li>Mit Node.js wird es für Server, Desktop-Anwendungen (VS Code) und sogar IoT verwendet.</li>
             <li>Funktioniert im Browser "out of the box".</li>
           </ul>
-          <ul><strong>Python</strong>
+          <ul><b>Python</b>
             <li>Eine universelle Sprache für Wissenschaft, Automatisierung, Datenanalyse, maschinelles Lernen und Server.</li>
             <li>Funktioniert nicht direkt im Browser (obwohl es Experimente gibt, z. B. PyScript).</li>
             <li>Wird häufig für Skripte verwendet, die Aufgaben automatisieren.</li>
@@ -70,26 +69,33 @@ for file in os.listdir("."):
 
 
       <h3>Sonstige Sprachvergleiche</h3>
-      <div class="two-column">
+      <div class="two-column" style="margin-bottom: 0;">
+        <div class="column">
+          <ul><h4>JavaScript</h4>
+            <li>Die Syntax ähnelt eher Sprachen wie C oder Java: geschweifte Klammern {} für Codeblöcke, Semikolons (obwohl optional).</li>
+            <li>Eher "frei", was aber zu unerwarteten Fehlern führen kann.</li>
+          </ul>
+        </div>
+
+        <div class="column">
+          <ul><h4>Python</h4>
+            <li>Saubere und minimalistische Syntax, bei der Einrückungen Codeblöcke definieren.</li>
+            <li>Zwingt durch strenge Formatierungsregeln, lesbaren Code zu schreiben.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="two-column" style="margin-top: 0;">
         <div class="column">
           <div class="code-container">
-            <ul><h4>JavaScript</h4>
-              <li>Die Syntax ähnelt eher Sprachen wie C oder Java: geschweifte Klammern {} für Codeblöcke, Semikolons (obwohl optional).</li>
-              <li>Eher "frei", was aber zu unerwarteten Fehlern führen kann.</li>
-            </ul>
-  <pre><code class="language-js" data-highlight="true">for (let i = 0; i &lt; 3; i++) {
+            <pre><code class="language-js" data-highlight="true">for (let i = 0; i &lt; 3; i++) {
     console.log(i);
 }
 // Output: 0, 1, 2</code></pre>
-          </div>
-        </div>
+          </div></div>
         <div class="column">
           <div class="code-container">
-            <ul><h4>Python</h4>
-              <li>Saubere und minimalistische Syntax, bei der Einrückungen Codeblöcke definieren.</li>
-              <li>Zwingt durch strenge Formatierungsregeln, lesbaren Code zu schreiben.</li>
-            </ul>
-  <pre><code class="language-py" data-highlight="true">for i in range(3):
+            <pre><code class="language-py" data-highlight="true">for i in range(3):
     print(i)
 # Output: 0, 1, 2</code></pre>
           </div>

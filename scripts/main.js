@@ -22,6 +22,7 @@ const slidePaths = [
   './components/slide17.html',
   './components/slide18.html',
   './components/slide19.html',
+  './components/slide20.html',
 ];
 
 async function init() {
@@ -134,13 +135,15 @@ function setupKeyboardNavigation() {
   const totalTimelineItems = 6;
 
   document.addEventListener('keydown', (event) => {
+    const currentSlide = getCurrentSlide();
+
     if (event.key === 'ArrowRight') {
       event.preventDefault();
       triggerAction('next-slide');
     } else if (event.key === 'ArrowLeft') {
       event.preventDefault();
       triggerAction('prev-slide');
-    } else if (event.key === ' ' && getCurrentSlide() === 3) {
+    } else if (event.key === ' ' && currentSlide === 3) {
       event.preventDefault();
       currentTimelineItem = (currentTimelineItem % totalTimelineItems) + 1;
       
